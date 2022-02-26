@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Preise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Medien/Logo/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="menu-container">
+            <!-- burger menu -->
+            <input type="checkbox" aria-label="Toggle menu" />
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!-- logo -->
+            <a class="menu-logo">
+                <img src="Medien/Logo/logo.png" alt="Logo" />
+            </a>
+
+            <!-- menu items -->
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Startseite
+                        </a>
+                    </li>
+                    <li>
+                        <a href="preise.html">
+                            Preise
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tiere.html">
+                            Unsere Tiere
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="kontakte.html">
+                            Kontakte
+                        </a>
+                    </li>
+                    <li>
+                        <a href="toUs.html">
+                            So finden Sie uns
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Sie wollen uns Kontaktieren?</h1>
+            <section class="text">
+                Sie haben Wünsche? Anregungen? Beschwerden? <br><br>
+                Schreiben Sie uns doch einach. <br>
+                Wir freuen uns um sämtliches Lob, Anregungen und Beschwerden. Da in jedem Fall die Tiere davon
+                Profitieren sollten.
+            </section>
+            <section>
+                <h2>
+                    Kontaktformular
+                </h2>
+                <form class = "text">
+                    <div>
+                        <input class="textbox" type="text" name="vorname" id="vorname" placeholder="Vorname*">
+                    </div>
+                    <div>
+                        <input class="textbox" type="text" placeholder="Nachname*" name="nachname" id="nachname">
+                    </div>
+                    <div>
+                        <input class="textbox" type="email" placeholder="Ihre E-Mail für Antworten*" name="email" id="email">
+                    </div>
+                    <div class="textarea">
+                        <textarea class="textbox" id="message" placeholder="Ihre Nachricht an uns!" name="message" rows="4"
+                            cols="22"></textarea>
+                    </div>
+                    <div>
+                        <h3 class="kontakte"> Hat ihnen der Aufenhalt gefallen?</h3>
+                        Gar nicht
+                        <input type="range" list="tickmarks" step="10">
+                        Sehr Gut
+                        <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="10"></option>
+                        <option value="20"></option>
+                        <option value="30"></option>
+                        <option value="40"></option>
+                        <option value="50"></option>
+                        <option value="60"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100"></option>
+                        </datalist>
+
+                    </div>
+                    <div>
+                        <h3 class="kontakte">Wann waren Sie bei uns?</h3>
+                        <input type="date" class="width">
+                    </div>
+                    <div>
+                        <h3 class="kontakte">Wie lange waren Sie bei uns?</h3>
+                        
+                        <input class="width" type="time">
+                    </div>
+
+
+                    <div>
+                        <button name="send" class="rotate"
+                            onclick="alert('Ihre Mitteilung wurde uns gesendet und wird umgehend an den Aktenvernichter weitergeleitet.\n\n Vielen dank für Ihre Kooperation!')">Absenden</button>
+                    </div>
+                    <div class="subtable small text">
+                        * Diese Informationen müssen nicht ausgefüllt werden
+                    </div>
+                </form>
+
+            </section>
+        </article>
+    </main>
+
+</body>
+
+</html>
