@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="DE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=main class=" wrapper">
+    <link rel="stylesheet" href="style.css">
+    <title>Schere Stein Papier</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main class="wrapper">
+
+        <div class="element1 grid-box">
+            <p id="ueberschrift">
+                Schere - Stein - Papier
+            </p>
+        </div>
+        <div class="element2 grid-box">
+            <div>
+                <p id="points" class="margin"></p>
+            </div>
+            <div id="roundVisible">
+
+                <div class="row">
+                    <p class="margin">Rundenanzahl?</p>
+                    <input type="number" name="rounds" id="rounds">
+                    <button class="margin" onclick="rundenAuswerten()">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="element3 grid-box">
+          
+                <img id="imgSchere" class="shake" src="media/scissors.svg" alt="Schere" onclick="schere()">
+                <img id="imgStein" class="shake" src="media/stone.svg" alt="Stein" onclick="stein()">
+                <img id="imgPapier" class="shake" src="media/paper.svg" alt="Papier" onclick="papier()">
+                <img id="imgGleichstand" class="shake unvisible" src="media/Waage.svg" alt="Papier">
+                <img id="imgGewinner" class="shake unvisible" src="media/Winner.svg" alt="Papier" >
+                <img id="imgVerlierer" class="shake unvisible" src="media/Looser.svg" alt="Papier" >
+        </div>
+        <div class="element4 grid-box">
+            <img id="computerImage" src="media/computer.svg" alt="">
+        </div>
+        <div class="element5 grid-box">
+            <p id="aktuellRunden"></p>
+        </div>
+    </main>
+    <script src="meinScript.js"></script>
+</body>
+
+</html>
