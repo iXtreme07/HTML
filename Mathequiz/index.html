@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MatheQuiz</title>
+</head>
+
+<body>
+    <main id="main">
+        <div class="row">
+            <button id="field01" class="number button row1">1</button>
+            <button id="field02" class="number button row1">2</button>
+            <button id="field03" class="number button row1">3</button>
+        </div>
+        <div class="row">
+            <button id="field04" class="number button row2">4</button>
+            <button id="field05" class="number button row2">5</button>
+            <button id="field06" class="number button row2">6</button>
+        </div>
+        <div class="row">
+            <button id="field07" class="number button row3">7</button>
+            <button id="field08" class="number button row3">8</button>
+            <button id="field09" class="number button row3">9</button>
+        </div>
+        <div class="buttons question startHidden row text"></div>
+        <div class="buttons row">
+            <button id="field10" onclick="newGame()" class="button row4">Neues Spiel starten</button>
+            <input class="startHidden" type="text" placeholder="Antwort">
+            <div id="change">
+                <button id="field11" onclick="next()" class="button row4">Frage Anzeigen</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="meinScript.js"></script>
+</body>
+
+</html>
